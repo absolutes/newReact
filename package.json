@@ -1,0 +1,25 @@
+{
+  "name": "liuzhi",
+  "version": "1.0.0",
+  "description": "构建一个webpack+react+es6环境的脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/absolutes/newReact.git"
+  },
+  "keywords": [
+    "webapck"
+  ],
+  "author": "'liuzhi'",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/absolutes/newReact/issues"
+  },
+  "homepage": "https://github.com/absolutes/newReact#readme",
+  "devDependencies": {
+    "webpack": "^3.0.0"
+  }
+}
