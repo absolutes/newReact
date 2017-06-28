@@ -4,7 +4,8 @@
   "description": "构建一个webpack+react+es6环境的脚手架",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rBabel":"babel src --watch --out-dir libs"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,9 @@
   },
   "homepage": "https://github.com/absolutes/newReact#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "webpack": "^3.0.0"
   }
 }
