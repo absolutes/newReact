@@ -14,7 +14,7 @@ class App extends Component {
     }
 }
 
-const myObj = {name:'liuyouzhi',age:18};
+const myObj = {name:'liuzhi',age:18};
 ReactDom.render(<App {...myObj} />,document.getElementById('app'));
 
 

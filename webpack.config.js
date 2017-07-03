@@ -2,15 +2,15 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry:{index:path.resolve(__dirname,'/src/index.js')},
+    entry:{index:__dirname+'/src/index.js'},
     output:{
-        path:path.resolve(__dirname,'/libs'),
+        path:__dirname+'/libs',
         filename:"[name].js"
         //filename:"index.js"
     },
-    resolve:{
-        extension:['','.js','.jsx','.json']
-    },
+    //resolve:{
+    //    extension:['','.js','.jsx','.json']
+    //},
     module:{
         loaders:[
             {
