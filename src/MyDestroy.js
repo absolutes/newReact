@@ -3,6 +3,7 @@
  */
 
 import React, {Component} from 'react';
+import ChildDestroy from './children/ChildDestroy.js';
 
 class MyDestroy extends Component {
     constructor(){
@@ -35,7 +36,7 @@ class MyDestroy extends Component {
                     <button onClick={this.increase.bind(this)}>每次加1</button>
                     <button onClick={this.destroy.bind(this)}>干掉这两个按钮</button>
                 </p>
-                <div>{this.state.value}</div>
+                <ChildDestroy value={this.state.value} />
             </div>
         )
     }
