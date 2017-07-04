@@ -4,8 +4,11 @@
 
 import React, {Component,PropTypes} from 'react';
 
+//console.log(React);
+//console.log(React.PropTypes);
 class MyTick extends Component {
     tick(){
+        //console.log(this)
         this.setState({secondsElapsed:this.state.secondsElapsed + 1})
     };
     componentDidMount(){

@@ -1,19 +1,19 @@
-import React, {Component} from 'react';
+import React, {Component,PropTypes} from 'react';
 
 class StyleDemo extends Component {
     constructor(){
         super();
         this.state = {
-            school:'西农'
+            school:0
         }
     }
     tick(){
-        this.setState({school:this.state.school+1})
+        this.setState({school:Number(this.state.school+1)})
     }
 
-    //componentDidMount(){
-    //    this.interval = setInterval(this.tick.bind(this),1000)
-    //}
+    componentDidMount(){
+        this.interval = setInterval(this.tick.bind(this),1000)
+    }
     componentWillUnmount(){
         clearInterval(this.interval);
     }
@@ -27,7 +27,7 @@ class StyleDemo extends Component {
 
         return (
             <div style={MyStyle.content} className="redFont" id="redFont" >
-                {this.state.school}红色字体 {this.props.age+this.props.gender}
+                西农{this.state.school}红色字体 {this.props.age+this.props.gender}
             </div>
         )
     }
@@ -35,6 +35,10 @@ class StyleDemo extends Component {
 StyleDemo.defaultProps = {
     age:19,
     gender:'man'
-
 }
+StyleDemo.propTypes = {
+    age:React.PropTypes.string,
+    gender:React.PropTypes.string
+}
+//StyleDemo.prototype.propsType
 export default StyleDemo;
