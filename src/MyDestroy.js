@@ -13,9 +13,8 @@ class MyDestroy extends Component {
         }
     }
     increase(){
-        let _that = this;
         this.setState({
-            value:_that.state.value+1
+            value:this.state.value+1
         })
     }
     destroy(){
@@ -25,14 +24,16 @@ class MyDestroy extends Component {
     }
 
     render(){
+        console.log(this.state.destroyed);
+
         if(this.state.destroyed){
             return null;
         }
         return (
             <div>
                 <p>
-                    <button onClick={this.increase}>每次加1</button>
-                    <button onClick={this.destroy}>干掉这两个按钮</button>
+                    <button onClick={this.increase.bind(this)}>每次加1</button>
+                    <button onClick={this.destroy.bind(this)}>干掉这两个按钮</button>
                 </p>
                 <div>{this.state.value}</div>
             </div>
