@@ -4,6 +4,12 @@ import ReactDom,{render} from 'react-dom';
 import MyComponent from './MyComponent.js';
 import MyTick from './MyTick.js';
 import MyDestroy from './MyDestroy';
+import HandleDOMComponent from './HandleDOMComponent.js';
+import SetColorComponent from './SetColorComponent.js';
+import ComponentNest from './ComponentNest.js';
+
+console.log(React);
+console.log(ReactDom);
 
 class App extends Component {
     render(){
@@ -13,6 +19,9 @@ class App extends Component {
                 <MyComponent {...myObj}/>
                 <MyTick />
                 <MyDestroy />
+                <HandleDOMComponent />
+                <SetColorComponent />
+                <ComponentNest />
             </div>
         )
     }

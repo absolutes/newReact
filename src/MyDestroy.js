@@ -28,7 +28,9 @@ class MyDestroy extends Component {
         console.log(this.state.destroyed);
 
         if(this.state.destroyed){
-            return null;
+            return (
+                <div>已经拆除</div>
+            );
         }
         return (
             <div>
