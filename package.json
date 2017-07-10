@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "rBabel": "babel src --watch --out-dir libs",
+    "rBabel": "babel src2 --watch --out-dir libs",
     "rWebpack": "webpack --watch --colors --display-error-details -p",
     "dev": "webpack-dev-server --content-base libs --inline --hot"
   },

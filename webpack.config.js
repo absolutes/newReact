@@ -2,7 +2,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry:{index:__dirname+'/src/index.js'},
+    entry:{index:__dirname+'/src2/index.js'},
     output:{
         path:__dirname+'/libs',
         filename:"[name].js"
@@ -31,7 +31,7 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({
             title:'webpack demo',
-            template:'./src/index.html'
+            template:'./src2/index.html'
         })
     ]
     //,devServer:{
