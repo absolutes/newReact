@@ -4,14 +4,8 @@
 
 import React, {Component} from 'react';
 import ReactDom, {render} from 'react-dom';
+import {Router,browserHistory} from 'react-router';
+import routes from './routes';
 
-class GitDemo extends Component {
-    render(){
-        return (
-            <div>
-               <h2>hello</h2>
-            </div>
-        )
-    }
-}
-ReactDom.render(<GitDemo />,document.getElementById('gitDemo'));
+let root = document.getElementById('gitDemo');
+ReactDom.render(<Router routes={routes} history={browserHistory} />,root);
